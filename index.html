@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SymptomGuard - Disease Predicter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">SymptomGuard - Disease Predicter</h1>
+    </div>
+
+    <div class="form-container">
+      <h2 class="info"></h2>
+      <form>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="symptoms">Symptoms:</label>
+          <select id="symptoms" name="symptoms[]" multiple required>
+            <option value="fever">Fever</option>
+            <option value="cough">Cough</option>
+            <option value="headache">Headache</option>
+            <option value="fatigue">Fatigue</option>
+            <option value="itching">Itching</option>
+            <!-- Add more symptoms as needed -->
+          </select>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
