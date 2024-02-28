@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Assessment Result</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/result.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1 class="logo">SymptomGuard - Disease Predicter</h1>
+      </div>
+    </header>
+    <div class="result-container">
+      <h2>Health Prediction Result</h2>
+
+      <section class="patient-details-section">
+        <h3>Patient Details</h3>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Age:</strong> 30</p>
+        <p><strong>Gender:</strong> Male</p>
+      </section>
+      <section class="symptoms-section">
+        <h3>Symptoms</h3>
+        <ul class="symptoms-list">
+          <li>Fever</li>
+          <li>Cough</li>
+        </ul>
+      </section>
+      <section class="prediction-section">
+        <h3>Result of Prediction</h3>
+        <p>
+          The prediction suggests a high likelihood of <strong>flu</strong>.
+        </p>
+      </section>
+
+      <button id="generate-report-btn">Generate PDF Report</button>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="jspdf.js"></script>
+  </body>
+</html>

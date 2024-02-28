@@ -7,7 +7,7 @@
         padding: 0;
         height: 100vh;
         background-color: #f4f4f4;
-        background-image: url("./assests/back.jpg"); /* Add your medical background image */
+        background-image: url("../assests/back.jpg"); /* Add your medical background image */
         background-size: cover;
         animation: fadeIn 1.5s ease-in-out;
         background-repeat: no-repeat;
@@ -63,7 +63,7 @@
       }
 
       select[multiple] {
-        height: auto;
+        height: 200px;
       }
 
       button {
